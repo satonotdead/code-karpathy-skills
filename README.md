@@ -190,6 +190,29 @@ For high-stakes or domain-specific projects, add explicit safety boundaries:
 - Ask for clarification before turning research summaries into operational advice.
 ```
 
+## Multi-Agent Best Practices
+
+### What multi-agent means here
+- Reusing the same core skills (Karpathy principles) across different coding agents.
+
+### Core principles
+- Single source of truth for skills.
+- Per-agent overrides only when necessary.
+- Minimal, surgical changes per project.
+
+### Per-agent patterns
+- Claude Code: use CLAUDE.md at repo root.
+- Cursor: use CURSOR.md and project-level skills.
+- OpenCode: use AGENTS.md and per-project rules.
+
+### Examples
+- How to keep behavior consistent across agents.
+- How to avoid conflicting instructions.
+
+### Pitfalls
+- Overlapping skill files.
+- Agent-specific hacks that break simplicity.
+
 ## Tradeoff Note
 
 These guidelines bias toward **caution over speed**. For trivial tasks (simple typo fixes, obvious one-liners), use judgment — not every change needs the full rigor.
