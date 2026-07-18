@@ -1,5 +1,15 @@
 # AGENTS.md
 
+## Repo Context
+
+- **Docs-only repo.** No code, tests, build, lint, or typecheck. Do not look for or suggest dev commands.
+- **Product:** behavioral guidelines for LLM coding agents, distributed as `CLAUDE.md` (Claude Code), `AGENTS.md` (OpenCode), `.cursor/rules/karpathy-guidelines.mdc` (Cursor), and `skills/karpathy-guidelines/SKILL.md` (reusable skill).
+- **Sync rule:** when editing the four principles or red-flags table, update ALL of: `CLAUDE.md`, `AGENTS.md`, `.cursor/rules/karpathy-guidelines.mdc`, and `skills/karpathy-guidelines/SKILL.md`. They must stay identical in substance. `CURSOR.md` and `README.md` may also need updates.
+- **Fork:** personal fork of `multica-ai/andrej-karpathy-skills` with merged upstream PRs. Upstream is source of truth for official releases.
+- **CI:** `.github/workflows/opencode.yml` runs OpenCode on `/oc` or `/opencode` in PR/issue comments. No other CI.
+
+---
+
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
 **Tradeoff:** These guidelines bias toward caution over speed. Calibrate rigor first:
