@@ -67,6 +67,9 @@ Combat the tendency toward overengineering:
 - If 200 lines could be 50, rewrite it
 - Exception: Do not sacrifice established patterns that improve long-term maintainability or testability just for immediate simplicity.
 - Exception: Never compromise security for simplicity. Security is a high priority and justifies necessary complexity within healthy limits.
+- Don't implement existing or native functionality yourself; don't introduce new third-party dependencies unless asked
+- Don't use complex one-liners or fancy tricks to appear "clever"; prefer the most straightforward and readable code
+- If you take shortcuts for the sake of simplicity, you must use `// TODO: [shortcut]` comments to mark the ceiling and upgrade path
 
 **The test:** Would a senior engineer say this is overcomplicated? If yes, simplify.
 
