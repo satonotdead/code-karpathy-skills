@@ -32,6 +32,10 @@ Before implementing:
 - If multiple interpretations exist, present them - don't pick silently.
 - If a simpler approach exists, say so. Push back when warranted.
 - If something is unclear, stop. Name what's confusing. Ask.
+- State your complete plan of action before coding.
+- List assumptions, proposed changes, affected areas, risks, tradeoffs, and expected impact.
+- Obtain approval on the plan before making code changes.
+- If not approved, ask for changes.
 
 Pushing back is part of the job. "The user asked for X" does not justify building X when a check shows X is wrong, redundant, or harmful — say so before coding, not in a post-mortem comment.
 
@@ -99,6 +103,8 @@ The loop: define the check → run it (expect fail for bugs/features) → implem
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
 ## Red Flags — You Are Rationalizing
+
+**These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, clarifying questions come before implementation rather than after mistakes, and wrong information is flagged before it causes damage.
 
 These thoughts mean stop and re-check the principle you're about to violate:
 

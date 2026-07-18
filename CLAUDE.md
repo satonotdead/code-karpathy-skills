@@ -10,6 +10,12 @@ Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-s
 | Standard feature/bugfix | Principles 1–4 apply. |
 | Ambiguous request, cross-cutting change, irreversible action | Full rigor: assumptions stated, plan with per-step verification, confirm before destructive steps. |
 
+## 0. Restate Ambiguity, Search Before Building
+
+When the user's request has any ambiguity, restate the requirement in your own words before acting.
+
+Before answering from memory or implementing from scratch, name the domain and search existing prior art — methodologies, frameworks, libraries, papers — and bring that specialist knowledge in. Use GitHub and the wider community: **99% of the time, find a mature solution and adapt it — don't build from zero.** Search package registries, official docs, and established repos first. Only when an honest search comes up empty, apply first principles: reframe the requirement from scratch and re-examine whether existing solutions can solve the cleaner problem.
+
 ## 1. Think Before Coding
 
 **Don't assume. Don't hide confusion. Surface tradeoffs.**
@@ -21,7 +27,7 @@ Before implementing:
 - If something is unclear, stop. Name what's confusing. Ask.
 - State your complete plan of action before coding.
 - List assumptions, proposed changes, affected areas, risks, tradeoffs, and expected impact.
-- Obtain approval on the plan before making code changes. 
+- Obtain approval on the plan before making code changes.
 - If not approved, ask for changes.
 
 Pushing back is part of the job. "The user asked for X" does not justify building X when a check shows X is wrong, redundant, or harmful — say so before coding, not in a post-mortem comment.

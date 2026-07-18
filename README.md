@@ -1,8 +1,12 @@
 # Karpathy-Inspired Claude Code Guidelines
 
-> Check out my new project [Multica](https://github.com/multica-ai/multica) — an open-source platform for running and managing coding agents with reusable skills.
+> **⚠️ Human documentation only — agents read [`CLAUDE.md`](CLAUDE.md) as the canonical source.**
 >
-> Follow me on X: [https://x.com/jiayuan_jy](https://x.com/jiayuan_jy)
+> **Fork notice:** This is a personal fork of [`multica-ai/andrej-karpathy-skills`](https://github.com/multica-ai/andrej-karpathy-skills), updated with merged upstream PRs for experimentation. The canonical upstream repo is the source of truth for official releases.
+>
+> Check out the original author's project [Multica](https://github.com/multica-ai/multica) — an open-source platform for running and managing coding agents with reusable skills.
+>
+> Follow the original author on X: [https://x.com/jiayuan_jy](https://x.com/jiayuan_jy)
 
 A single `CLAUDE.md` file to improve Claude Code behavior, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
 
